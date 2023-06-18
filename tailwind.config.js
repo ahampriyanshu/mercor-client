@@ -10,10 +10,10 @@ export default {
     },
     extend: {
       colors: {
-        grayColor: '#787486',
-        blackColor: '#0D062D'
-      }
+        grayColor: "#787486",
+        blackColor: "#0D062D",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
-}
+};

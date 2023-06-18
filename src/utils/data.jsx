@@ -1,11 +1,11 @@
-import React from 'react'
-import demo_1 from "../assets/demo_1.jpg"
-import demo_2 from "../assets/demo_2.jpg"
-import user2 from '../assets/user2.png'
-import user3 from '../assets/user3.png'
-import user4 from '../assets/user4.png'
-import user5 from '../assets/user5.png'
-import user6 from '../assets/user6.png'
+import React from "react";
+import demo_1 from "../assets/demo_1.jpg";
+import demo_2 from "../assets/demo_2.jpg";
+import user2 from "../assets/user2.png";
+import user3 from "../assets/user3.png";
+import user4 from "../assets/user4.png";
+import user5 from "../assets/user5.png";
+import user6 from "../assets/user6.png";
 const data = [
   {
     id: 1,
@@ -23,15 +23,14 @@ const data = [
         files: 0,
         users: [
           {
-            image: user5
+            image: user5,
           },
           {
-            image: user2
+            image: user2,
           },
           {
-            image: user3
+            image: user3,
           },
-          
         ],
       },
       {
@@ -44,12 +43,12 @@ const data = [
         files: 3,
         users: [
           {
-            image: user4
+            image: user4,
           },
           {
-            image: user6
+            image: user6,
           },
-        ]
+        ],
       },
       {
         id: 33,
@@ -61,15 +60,15 @@ const data = [
         files: 13,
         users: [
           {
-            image: user5
+            image: user5,
           },
           {
-            image: user2
+            image: user2,
           },
           {
-            image: user3
+            image: user3,
           },
-        ]
+        ],
       },
     ],
   },
@@ -89,15 +88,15 @@ const data = [
         files: 15,
         users: [
           {
-            image: user3
+            image: user3,
           },
           {
-            image: user2
+            image: user2,
           },
           {
-            image: user5
+            image: user5,
           },
-        ]
+        ],
       },
       {
         id: 46,
@@ -109,9 +108,9 @@ const data = [
         files: 10,
         users: [
           {
-            image: user3
+            image: user3,
           },
-        ]
+        ],
       },
       {
         id: 47,
@@ -123,15 +122,15 @@ const data = [
         files: 15,
         users: [
           {
-            image: user5
+            image: user5,
           },
           {
-            image: user2
+            image: user2,
           },
           {
-            image: user3
+            image: user3,
           },
-        ]
+        ],
       },
     ],
   },
@@ -151,12 +150,12 @@ const data = [
         files: 15,
         users: [
           {
-            image: user6
+            image: user6,
           },
           {
-            image: user2
+            image: user2,
           },
-        ]
+        ],
       },
       {
         id: 74,
@@ -168,18 +167,18 @@ const data = [
         files: 15,
         users: [
           {
-            image: user5
+            image: user5,
           },
           {
-            image: user2
+            image: user2,
           },
           {
-            image: user3
+            image: user3,
           },
-        ]
+        ],
       },
     ],
   },
-]
+];
 
-export default data
+export default data;

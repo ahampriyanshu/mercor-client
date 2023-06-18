@@ -1,18 +1,7 @@
 import React, { useState } from "react";
 import {
-  AddSquare,
-  ArrowDown2,
-  Calendar1,
-  Edit,
-  FilterSearch,
-  Link21,
-  Menu,
-  Pause,
-  Profile2User,
+  AddSquare
 } from "iconsax-react";
-import user3 from "../assets/user3.png";
-import user4 from "../assets/user4.png";
-import user5 from "../assets/user5.png";
 import { FolderMinus, Message } from "iconsax-react";
 import data from "../utils/data";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
@@ -53,7 +42,7 @@ const TaskBoard = () => {
 
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
-      <section className="grid lg:grid-cols-3 gap-5 mt-10 ">
+      <section className="grid lg:grid-cols-3 gap-5 mt-10 md:px-10 px-5">
         {boardData.map((item, sectionIndex) => {
           const { id, title: text, identityColor: markColor, tasks } = item;
           return (
@@ -71,10 +60,10 @@ const TaskBoard = () => {
                 </span>
                 <div className="flex-grow"></div>
                 {text === "to do" && (
-              <div>
-                <AddSquare size={20} color="#5030E5" variant="Bulk" />
-              </div>
-            )}
+                  <div>
+                    <AddSquare size={20} color="#5030E5" variant="Bulk" />
+                  </div>
+                )}
               </div>
               <hr
                 style={{ borderColor: `${markColor}` }}

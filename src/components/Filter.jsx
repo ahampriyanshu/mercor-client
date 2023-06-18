@@ -16,7 +16,7 @@ import user4 from "../assets/user4.png";
 import user5 from "../assets/user5.png";
 const Filter = () => {
   return (
-    <section className=" my-10 ">
+    <section className="my-10 md:px-10 px-5">
       <div className=" flex flex-col md:flex-row md:items-center justify-between space-y-10 md:space-y-0 ">
         {/* Right */}
         <div className=" flex justify-start  space-x-5  ">
@@ -39,7 +39,7 @@ const Filter = () => {
             <span className=" font-medium text-[#5030E5] ">Invite</span>
           </button>
           {/* Users Profile */}
-          <div className="flex -space-x-2 overflow-hidden ">
+          <div className="flex -space-x-2 overflow-hidden">
             <img
               className="inline-block md:h-10 md:w-10 h-8  w-8  rounded-full ring-2 ring-white"
               src={user5}

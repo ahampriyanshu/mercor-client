@@ -6,18 +6,16 @@ import {
   SearchNormal1,
 } from "iconsax-react";
 
-import avatar from "../assets/avatar.png";
-
-const Navbar = () => {
+const Navbar = ({sidebarVisible}) => {
   return (
     <>
-      <nav className="flex flex-col md:flex-row md:items-center justify-between border-b border-b-[#DBDBDB] py-5">
+      <nav className="flex flex-col md:flex-row md:items-center justify-between border-b border-b-[#DBDBDB] py-5 md:px-10 px-5">
         {/* Search box */}
-        <form action="" className=" w-1/3 hidden md:block ">
+        <form action="" className="w-1/3 hidden md:block">
           <div className=" relative flex items-center ">
             <SearchNormal1
               size={20}
-              className="pointer-events-none absolute ml-4 text-grayColor "
+              className="pointer-events-none absolute ml-4 text-grayColor"
             />
             <input
               type="text"
@@ -44,7 +42,7 @@ const Navbar = () => {
 
           {/* User Avatar */}
           <div className=" flex items-center justify-center space-x-5  ">
-            <div className="">
+            <div className={sidebarVisible ? '' : 'hidden'}>
               <p className=" text-black ">Anima Agarwal</p>
               <p className=" text-right text-sm text-grayColor ">U.P, India</p>
             </div>
@@ -52,7 +50,7 @@ const Navbar = () => {
             <div className=" flex items-center justify-center space-x-3 ">
               <img
                 className=" h-12 w-12 rounded-full object-cover  object-top "
-                src={avatar}
+                src='/avatar.png'
                 alt=""
               />
               <ArrowDown2 size={20} className=" text-[#292D32] " />
