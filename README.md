@@ -22,13 +22,21 @@ This is the Figma: https://www.figma.com/file/Paz2INbKkXCSR0Tqb9cmPF/Mercor-Proj
 
 1. Test the deployed application on multiple devices to verify its functionality and responsiveness.
 
-## Preview
+## Tech
 
 - React (v18), Router(v6), Tailwind(v3) and Node (v20).
-- Responsive functional components.
+- Responsive functional components styled with tw and scss.
 - Deployed on Github Pages.
 
+## Preview
+
 - Deployed Node: [https://mercor.ahampriyanshu.com/](https://mercor.ahampriyanshu.com/)
+
+## Screenshots
+
+![sm](./public/lg-active.png)
+![sm](./public/lg-collapsed.png)
+![sm](./public/sm.png)
 
 ## Setup
 
