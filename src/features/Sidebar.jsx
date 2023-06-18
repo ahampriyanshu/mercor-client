@@ -1,35 +1,12 @@
 import { AddSquare, ArrowLeft2, Colorfilter, LampOn } from "iconsax-react";
-import links from "../utils/links";
+import { linkData, profileData } from "../constant";
 import { Link, NavLink } from "react-router-dom";
-
-const projectsItems = [
-  {
-    id: 1,
-    text: "mobile app",
-    color: "#7AC555",
-  },
-  {
-    id: 2,
-    text: "website redesign",
-    color: "#FFA500",
-  },
-  {
-    id: 3,
-    text: "design system",
-    color: "#E4CCFD",
-  },
-  {
-    id: 4,
-    text: "wireframes",
-    color: "#76A5EA",
-  },
-];
 
 const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
   return (
     <div>
-      <section className="sticky top-0 h-screen">
-        <div className=" flex justify-between border-b py-7 px-5">
+      <section className="sticky top-0 h-screen overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+        <div className=" flex justify-between items-center border-b px-5 h-20">
           <div className={sidebarVisible ? "" : "hidden"}>
             <div className="flex items-center justify-between space-x-4 ">
               <Colorfilter size="32" variant="Bulk" color="#5030E5" />
@@ -64,7 +41,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </div>
 
         <div className="my-5">
-          {links.map((link) => {
+          {linkData.map((link) => {
             const { id, text, icon } = link;
             return (
               <div key={id} className=" ">
@@ -90,11 +67,11 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
             <div className=" flex items-center justify-between text-xs font-bold text-grayColor px-5 ">
               <p className=" uppercase ">My Projects</p>
               <button className="">
-                <AddSquare className=" h-5 w-5 " />
+                <AddSquare className="h-5 w-5" />
               </button>
             </div>
             <div className="">
-              {projectsItems.map((item) => {
+              {profileData.map((item) => {
                 const { id, text, color } = item;
                 return (
                   <NavLink

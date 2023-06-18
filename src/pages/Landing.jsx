@@ -1,4 +1,5 @@
-import { Filter, Navbar, Sidebar, TaskBoard } from "../components";
+import Dashboard from "../features/Dashboard";
+import Sidebar from "../features/Sidebar";
 import { useState } from "react";
 
 const Landing = () => {
@@ -7,7 +8,7 @@ const Landing = () => {
   const toggleSidebar = () => setSidebarVisible((prev) => !prev);
 
   return (
-    <main className="flex w-full flex-row overflow-hidden">
+    <main className="flex w-full flex-row">
       <aside
         className={`${
           sidebarVisible ? "sidebar-active" : "siderbar-hidden"
@@ -19,9 +20,7 @@ const Landing = () => {
         />
       </aside>
       <section className="mb-12 w-full">
-        <Navbar sidebarVisible={sidebarVisible} />
-        <Filter />
-        <TaskBoard />
+        <Dashboard />
       </section>
     </main>
   );

@@ -1,12 +1,77 @@
-import React from "react";
-import demo_1 from "../assets/demo_1.jpg";
-import demo_2 from "../assets/demo_2.jpg";
-import user2 from "../assets/user2.png";
-import user3 from "../assets/user3.png";
-import user4 from "../assets/user4.png";
-import user5 from "../assets/user5.png";
-import user6 from "../assets/user6.png";
-const data = [
+import {
+  Category,
+  Message,
+  Profile2User,
+  Setting2,
+  TaskSquare,
+} from "iconsax-react";
+
+import card1 from "/card-1.jpg";
+import card2 from "/card-2.jpg";
+import profile1 from "/profile-1.png";
+import profile2 from "/profile-2.png";
+import profile3 from "/profile-3.png";
+import profile4 from "/profile-4.png";
+import profile5 from "/profile-5.png";
+import profile6 from "/profile-6.png";
+
+export const linkData = [
+  {
+    id: 1,
+    text: "Home",
+    path: "/",
+    icon: <Category />,
+  },
+  {
+    id: 2,
+    text: "Messages",
+    path: "/messages",
+    icon: <Message />,
+  },
+  {
+    id: 3,
+    text: "Tasks",
+    path: "/tasks",
+    icon: <TaskSquare />,
+  },
+  {
+    id: 4,
+    text: "Members",
+    path: "/memebers",
+    icon: <Profile2User />,
+  },
+  {
+    id: 5,
+    text: "Settings",
+    path: "/settings",
+    icon: <Setting2 />,
+  },
+];
+
+export const profileData = [
+  {
+    id: 1,
+    text: "mobile app",
+    color: "#7AC555",
+  },
+  {
+    id: 2,
+    text: "website redesign",
+    color: "#FFA500",
+  },
+  {
+    id: 3,
+    text: "design system",
+    color: "#E4CCFD",
+  },
+  {
+    id: 4,
+    text: "wireframes",
+    color: "#76A5EA",
+  },
+];
+
+export const cardData = [
   {
     id: 1,
     title: "to do",
@@ -23,13 +88,13 @@ const data = [
         files: 0,
         users: [
           {
-            image: user5,
+            image: profile5,
           },
           {
-            image: user2,
+            image: profile2,
           },
           {
-            image: user3,
+            image: profile3,
           },
         ],
       },
@@ -43,10 +108,10 @@ const data = [
         files: 3,
         users: [
           {
-            image: user4,
+            image: profile4,
           },
           {
-            image: user6,
+            image: profile6,
           },
         ],
       },
@@ -60,13 +125,13 @@ const data = [
         files: 13,
         users: [
           {
-            image: user5,
+            image: profile5,
           },
           {
-            image: user2,
+            image: profile2,
           },
           {
-            image: user3,
+            image: profile3,
           },
         ],
       },
@@ -82,19 +147,19 @@ const data = [
         id: 45,
         priority: "low",
         title: "Onboarding Illustrations ",
-        image: demo_1,
+        image: card1,
         description: null,
         comments: 14,
         files: 15,
         users: [
           {
-            image: user3,
+            image: profile3,
           },
           {
-            image: user2,
+            image: profile2,
           },
           {
-            image: user5,
+            image: profile5,
           },
         ],
       },
@@ -108,7 +173,7 @@ const data = [
         files: 10,
         users: [
           {
-            image: user3,
+            image: profile3,
           },
         ],
       },
@@ -122,13 +187,13 @@ const data = [
         files: 15,
         users: [
           {
-            image: user5,
+            image: profile5,
           },
           {
-            image: user2,
+            image: profile2,
           },
           {
-            image: user3,
+            image: profile3,
           },
         ],
       },
@@ -144,16 +209,16 @@ const data = [
         id: 73,
         priority: "completed",
         title: "Mobile App Design",
-        image: demo_2,
+        image: card2,
         description: null,
         comments: 12,
         files: 15,
         users: [
           {
-            image: user6,
+            image: profile6,
           },
           {
-            image: user2,
+            image: profile2,
           },
         ],
       },
@@ -167,18 +232,16 @@ const data = [
         files: 15,
         users: [
           {
-            image: user5,
+            image: profile5,
           },
           {
-            image: user2,
+            image: profile2,
           },
           {
-            image: user3,
+            image: profile3,
           },
         ],
       },
     ],
   },
 ];
-
-export default data;
